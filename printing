@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("================================");
+
+        // Loop to read and process input lines
+        for (int i = 0; i < 3; i++) {
+            String s = sc.next();   // Read the string part
+            int x = sc.nextInt();  // Read the integer part
+
+            System.out.printf("%-15s%03d%n", s, x);
+        }
+
+        System.out.println("================================");
+
+        sc.close();
+    }
+}
